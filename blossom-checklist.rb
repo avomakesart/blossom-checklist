@@ -1,8 +1,8 @@
 class Checklist < Formula
   desc "A pre-push checklist tool"
   homepage "https://github.com/avomakesart/homebrew-blossom-checklist"
-  url "https://github.com/avomakesart/homebrew-blossom-checklist/archive/refs/tags/blossom-first.tar.gz"
-  sha256 "336063f228b5bda3fd315350a7b47466527ded221c315c973d6012057a324b4d"
+  url "https://github.com/avomakesart/homebrew-blossom-checklist/archive/refs/tags/v1.0.1.tar.gz"
+  sha256 "6242e2195cb5a834876f845fb5aa3a57257f464c4b9a2e83fb70d4aa31e5f992"
   version "1.0.1"
 
   depends_on "go" => :build
