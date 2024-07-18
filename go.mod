@@ -1,3 +1,3 @@
-module alvarocastle.com/blossome-checklist
+module alvarocastle.com/blossom-checklist
 
 go 1.22.4

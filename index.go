@@ -13,13 +13,13 @@ type Section struct {
 	Items       []string
 }
 
-type Checklist struct {
+type BlossomChecklist struct {
 	Intro    string
 	Sections []Section
 }
 
 func main() {
-	checklist := Checklist{
+	checklist := BlossomChecklist{
 		Intro: "Make sure to follow these steps before you click on the merge button. We know that you are excited to merge your things, but let's be safe first.",
 		Sections: []Section{
 			{
@@ -117,11 +117,13 @@ func main() {
 
 	if allChecked {
 		fmt.Println("Great! You have completed all checks. You can proceed with your push.")
+		os.Exit(0)
 	} else {
 		fmt.Println("The following items are still unchecked:")
 		for _, item := range uncheckedItems {
 			fmt.Printf("- %s\n", item)
 		}
 		fmt.Println("Please complete all checks before pushing.")
+		os.Exit(1)
 	}
 }

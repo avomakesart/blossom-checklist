@@ -1,4 +1,4 @@
-class Checklist < Formula
+class BlossomChecklist < Formula
   desc "A pre-push checklist tool"
   homepage "https://github.com/avomakesart/homebrew-blossom-checklist"
   url "https://github.com/avomakesart/homebrew-blossom-checklist/archive/refs/tags/v1.0.1.tar.gz"
@@ -8,7 +8,7 @@ class Checklist < Formula
   depends_on "go" => :build
 
   def install
-    system "go", "build", "-o", "checklist"
+    system "go", "build", "-o", "blossom-checklist"
     bin.install "blossom-checklist"
   end
 
